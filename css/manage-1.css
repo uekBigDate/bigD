@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/*头部开始*/
+header{
+    width: 100%;
+    height: 58px;
+    background: #4381e6;
+    position: fixed;
+    top:0;
+    left:0;
+}
+.header-left{
+    width: 176px;
+    height: 36px;
+    margin-left: 42px;
+    margin-top: 16px;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+}
+.dolphin{
+    width: 35px;
+    height: 36px;
+    background: url("../img/1@3x.png") no-repeat center;
+    background-size: contain;
+}
+.name{
+    font-size: 16px;
+    color: #fff;
+    margin-top: 7px;
+}
+.header-right{
+    width: 127px;
+    height: 28px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+.head{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: url("../img/13@3x.png") no-repeat center;
+    background-size: contain;
+}
+.manager{
+    font-size: 13px;
+    color: #b2c7f3;
+    line-height: 28px;
+}
+.arrow{
+    font-size: 5px;
+    color:#b2c7f3;
+    line-height: 28px;
+}
+/*头部结束*/
+section{
+    width: 100%;
+    height: 678px;
+    background: #f1f4f9;
+    padding-top: 58px;
+}
+.aside{
+    width: 180px;
+    height: 100%;
+    background: #fff;
+    float: left;
+    position: fixed;
+    top:58px;
+    left:0;
+}
+.class{
+    width: 100%;
+    height: 240px;
+    background: lightskyblue;
+}
+.class-one{
+    width: 178px;
+    height: 39px;
+    border-bottom: 1px solid #f4f4f4;
+    background:#fff;
+    border-right: 2px solid #4381e6;
+    font-size: 14px;
+    color: #4381e6;
+    text-align: center;
+    line-height: 39px;
+}
+.class-one:hover{
+    background: #ecf2fc
+}
+.class-two{
+    color: #8d8d8d;
+    width: 180px;
+    border-right: none;
+}
+.produce{
+    width: 1168px;
+    height: 100%;
+    float: right;
+    /*background: fuchsia;*/
+    overflow: hidden;
+}
+.content{
+    width: 1156px;
+    height: 660px;
+    /*background: gold;*/
+    margin: 15px auto;
+
+}
+.message{
+    width: 100%;
+    height: 60px;
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 11px;
+}
+.Bshell{
+    width: 104px;
+    height: 15px;
+    /*background: #25eda3;*/
+    margin-left: 30px;
+    margin-top: 23px;
+    float: left;
+}
+.words{
+    font-size: 15px;
+    color: #4381e6;
+    line-height: 15px;
+    float: left;
+}
+.names{
+    font-size: 14px;
+    color: #b8b8b8;
+    line-height: 15px;
+    float: left;
+    margin-left: 9px;
+}
+.tijiao{
+    width: 82px;
+    height: 29px;
+    border-radius: 5px;
+    background:#4381e6;
+    float: right;
+    margin-top: 16px;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    line-height: 29px;
+    margin-right: 30px;
+}
+.nodes{
+    width: 100%;
+    height: 126px;
+    border-radius: 5px;
+    background: #4c90ff;
+    overflow: hidden;
+}
+.mainnode{
+    width: 104px;
+    height: 14px;
+    margin-top: 22px;
+    margin-left: 30px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 14px;
+}
+.information{
+    width: 756px;
+    height: 26px;
+    /*background: white;*/
+    margin-top: 34px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.address{
+    width: 221px;
+    height: 26px;
+    display: flex;
+    justify-content: space-between;
+}
+.circle{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #fff;
+    margin-top: 12px;
+}
+.ip{
+    font-size: 15px;
+    color: #b4ccff;
+    line-height: 26px;
+}
+.number{
+    width: 129px;
+    height: 26px;
+    border-radius: 5px;
+    background: #4482e8;
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 26px;
+    font-weight: bold;
+}
+.port{
+    width: 132px;
+    height: 26px;
+    display: flex;
+    justify-content: space-between;
+}
+.num1{
+    width: 41px;
+    height: 26px;
+    border-radius: 5px;
+    background: #4482e8;
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 26px;
+    font-weight: bold;
+}
+.password{
+    width: 150px;
+    height: 26px;
+    /*background: black;*/
+    display: flex;
+    justify-content: space-between;
+}
+.num2{
+    width: 74px;
+    height: 26px;
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 26px;
+    border-radius: 5px;
+    background: #4482e8;
+    font-weight: bold;
+}
+.nodemessage{
+    width: 100%;
+    height: 437px;
+    margin-top: 11px;
+}
+.node1{
+    width: 378px;
+    height: 213px;
+    background: #fff;
+    border-radius: 5px;
+    float: left;
+    margin-right: 11px;
+    margin-bottom: 11px;
+}
+.node1:nth-child(3){
+    margin-right: 0;
+}
+.main{
+    color: #8d8d8d;
+}
+span{
+    color: #4fa1fd;
+}
+.add{
+    margin-left: 30px;
+    margin-top: 40px;
+}
+.circle1{
+    background: #ff6c84;
+}
+.number1{
+    background: #ecf2fc;
+    color: #4381e6;
+    font-weight: bold;
+}
+.port1{
+    margin-top: 4px;
+    margin-left: 30px;
+}
+
+.circle2{
+    background: #3fd173;
+}
+.numeral{
+    background: #ecfaf0;
+    color:#3fd173;
+    font-weight: bold;
+}
+.ports{
+    margin-top: 4px;
+    margin-left: 30px;
+}
+.circle3{
+    background: #ffb033;
+}
+.digit{
+    background: #fff6e8;
+    color:#ffb033;
+    font-weight: bold;
+}
+.code{
+    width: 165px;
+    margin-top: 4px;
+    margin-left: 30px;
+}
+.circle4{
+    background: #ff5b75;
+}
+.letter{
+    background: #fef0f3;
+    color: #fa7088;
+    font-weight: bold;
+}
+.ip-left{
+    margin-left: -12px;
+}
+
+footer{
+    width:100%;
+    height: 50px;
+    background: #fff;
+    font-size: 12px;
+    color: #b8b8b8;
+    text-align: center;
+    line-height: 50px;
+    z-index: 10;
+}
+.node{
+    background: #fff;
+}
+.round{
+    background: #4381e6;
+}
