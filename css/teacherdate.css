@@ -17,12 +17,6 @@ body,html{
     background: #F1F4F9;
     overflow: hidden;
 }
-/*body{*/
-/*padding: 15px;*/
-/*box-sizing: border-box;*/
-/*!*position: relative;*!*/
-
-/*}*/
 .pull-left{
     float: left;
 }
