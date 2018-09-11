@@ -69,35 +69,7 @@ header{
 .managelogo .manager{
     margin-right: 12px;
 }
-nav{
-    width: 180px;
-    height: 100%;
-    background: #fff;
-    position: fixed;
-    top:0;
-    left:0;
-}
-.asidenav{
-    width: 100%;
-    height: 100%;
-    padding-top: 58px;
-}
-.asidenav li{
-    width: 178px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    font-size: 14px;
-    border-bottom: 1px solid #F4F4F4;
-    border-right: 2px solid #fff;
-}
-.asidenav li a{
-    color: rgba(0,0,0,0.6);
-}
-.asidenav li.selected{
-    background: #ECF2FC;
-    border-right:2px solid #4381E6
-}
+
 
 /*内容部分*/
 section{
@@ -260,5 +232,38 @@ footer{
     bottom: 0;
 }
 
+
+/*菜单*/
+nav{
+    width: 180px;
+    height: 100%;
+    background: #fff;
+    position: fixed;
+    top:0;
+    left:0;
+}
+.asidenav{
+    width: 100%;
+    height: 100%;
+    padding-top: 58px;
+}
+.asidenav li{
+    width: 178px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    border-bottom: 1px solid #F4F4F4;
+    border-right: 2px solid #fff;
+}
+.asidenav li a{
+    display: block;
+    width: 100%;
+    height: 40px;
+    color: rgba(0,0,0,0.6);
+}
+.asidenav li.selected{
+    background: #ECF2FC;
+    border-right:2px solid #4381E6
+}
 
 

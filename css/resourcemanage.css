@@ -1,16 +1,20 @@
 section .maintop1{
-    height: 280px;
+    height: 54%;
     background: none;
     padding: 0;
 }
 .maintop1 .left{
-    width: 560px;
+    width: 49.5%;
     height: 100%;
     background: #fff;
     border-radius: 4px;
     padding: 15px;
     box-sizing: border-box;
-    margin-right: 2px;
+    /*margin-right: 2px;*/
+    position: relative;
+}
+.maintop1 .left:first-child{
+    margin-right: 1%;
 }
 section .maintop1 .bottom{
     width: 100%;
@@ -20,18 +24,27 @@ section .maintop1 .bottom>img{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin-left: 180px;
-    display: inline-block;
+    /*margin-left: 180px;*/
+    display:block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 section .maintop1 .bottom .tands{
-    margin-top: 160px;
+    /*margin-top: 160px;*/
+    position: absolute;
+    right: 30px;
+    bottom: 54px;
 }
 section .maintop1 .bottom .tands img{
     width: 78px;
     height: 38px;
 }
 #sec{
-    max-height: 650px;
+    height: 100%;
     overflow-y: auto;
     padding-bottom: 100px;
 }
