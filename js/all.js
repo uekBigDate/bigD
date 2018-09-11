@@ -2,7 +2,6 @@ window.onload=function () {
     let navlis = document.querySelectorAll(".asidenav li");
     let two=document.querySelectorAll(".asidenav .two");
     let three=document.querySelectorAll(".asidenav .three");
-    console.log(two,three);
     let time=0;
     for (let i = 0; i < navlis.length; i++) {
         navlis[i].onclick = function () {
@@ -43,4 +42,17 @@ window.onload=function () {
         }
     }
 
-}
+    // //水波动效
+    // $(".asidenav a li").click(function () {
+    //     let index=$(".asidenav a li").index();
+    //     $(".asidenav li div").eq(index).css("display","block").finish().animate({
+    //         width:`300px`,
+    //         height:`300px`
+    //     },20,function () {
+    //         $(".asidenav li div").eq(index).css({display:"none",width: `20px`,height: `20px`
+    //         })
+    //     })
+    //
+    // });
+
+};

@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body,html{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+header{
+    width: 100%;
+    height: 58px;
+    background: #4381e6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+header .logo{
+    width: 35px;
+    height: 36px;
+    position: fixed;
+    top: 16px;
+    left: 42px;
+}
+header .logo img{
+    width: 35px;
+    height: 36px;
+}
+header .title{
+    font-size: 18px;
+    font-family: FZZYJW;
+    color: #fff;
+    position: fixed;
+    top: 17px;
+    left: 88px;
+    font-weight: bold;
+}
+header .portrait{
+    width: 28px;
+    height: 28px;
+    position: fixed;
+    top: 14px;
+    right: 114px;
+}
+header .portrait img{
+    width: 28px;
+    height: 28px;
+}
+header .use{
+    font-size: 14px;
+    font-family: "苹方";
+    font-weight: bold;
+    color: rgba(255,255,255,0.5);
+    position: fixed;
+    top: 18px;
+    right: 36px;
+}
+.icon-arrow{
+    color: rgba(255,255,255,0.5);
+    font-size: 10px;
+    position: fixed;
+    top: 22px;
+    right: 12px;
+}
+
+nav{
+    width: 180px;
+    height: 100%;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 888;
+}
+nav ul{
+    width: 100%;
+    margin-top: 58px;
+}
+nav ul li{
+    width: 100%;
+    height: 41px;
+    border-bottom: 1px solid #f4f4f4;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: "苹方";
+    font-weight: bold;
+    color: rgba(0,0,0,0.6);
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.two{
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    text-align: center;
+    color: #333;
+    border-bottom: 1px solid #F4F4F4;
+    padding-left: 30px;
+    box-sizing: border-box;
+    display: none;
+}
+.three{
+    width: 100%;
+    height: 40px;
+    font-size: 10px;
+    line-height: 40px;
+    text-align: center;
+    color: #3fd173;
+    border-bottom: 1px solid #F4F4F4;
+    padding-left: 55px;
+    box-sizing: border-box;
+    display: none;
+}
+
+
+
+
+section{
+    width: 100%;
+    min-height: 768px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f1f4f9;
+    padding: 73px 0 0 195px;
+    box-sizing: border-box;
+}
+section main{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    margin-bottom: 11px;
+    padding: 23px 0;
+    box-sizing: border-box;
+}
+.main-title{
+    width: auto;
+    height: 12px;
+    margin-left: 30px;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: left;
+    color: #666;
+    font-weight: bold;
+}
+.main-title div{
+    width: 2px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 4px;
+    background-image: -moz-linear-gradient(top,#6787ff,#33bffb);
+    background-image: -webkit-linear-gradient(top,#6787ff,#33bffb);
+    background-image: -ms-linear-gradient(top,#6787ff,#33bffb);
+    background-image: -o-linear-gradient(top,#6787ff,#33bffb);
+}
+.main-con{
+    width: auto;
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+h1{
+    width: 86px;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: left;
+    color: #666;
+    font-weight: bold;
+    display: inline-block;
+}
+.box{
+    width: 132px;
+    height: 132px;
+    border-radius: 4px;
+    border: 1px solid #f4f4f4;
+    margin-right: 21px;
+    font-size: 14px;
+    color: #25cb77;
+    text-align: center;
+}
+.box span{
+    font-size: 42px;
+    color: #25cb77;
+}
+.date{
+    width: 132px;
+    height: 27px;
+    border: 1px solid #f4f4f4;
+    border-radius: 4px;
+    outline: none;
+}
+input[type=date]::-webkit-inner-spin-button { visibility: hidden;  }
+input[type=date]::-webkit-calendar-picker-indicator {color: #4381e6}
+input[type=date]:read-write{text-align: center}
+
+.select{
+    width: auto;
+    height: 15px;
+    font-size: 14px;
+    color: #999;
+    line-height: 15px;
+    margin-top: 11px;
+}
+.select div{
+    width: 15px;
+    height: 15px;
+    background: #25cb77;
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 4px;
+    line-height: 15px;
+    display: inline-block;
+    margin-left: 126px;
+}
+.people{
+    width: 74px;
+    height: 27px;
+    border-radius: 4px;
+    border: 1px solid #f4f4f4;
+    margin-right: 35px;
+    outline: none;
+}
+input::-webkit-input-placeholder {color:#999;text-align: center}
+input:-moz-placeholder {color: #999;text-align: center}
+input::-moz-placeholder { color: #999;text-align: center}
+input:-ms-input-placeholder {color: #999;text-align: center}
+
+.main-con-div{
+    display: inline-block;
+    color: #999;
+    font-size: 14px
+}
+.next-btn{
+    width: 111px;
+    height: 29px;
+    background: #4381e6;
+    border-radius: 4px;
+    outline: none;
+    border: 0;
+    margin-top: 45px;
+    margin-left: 126px;
+    color: #fff;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    color: #666;
+    font-size: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+/*弹出框*//*弹出框*//*弹出框*//*弹出框*/
+.import{
+    width: 580px;
+    height: 479px;
+    background: #fff;
+    border-radius: 4px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: 0 0 2000px 2000px rgba(0,0,0,0.8);
+    z-index: 999;
+    display: none;
+}
+.import-title{
+    width: 100%;
+    height: 39px;
+    border-bottom: 1px solid #f4f4f4;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 34px;
+    padding: 4px 8px 0 19px;
+    box-sizing: border-box;
+}
+.colse{
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+    color: #bdc0c5;
+    line-height: 30px;
+    text-align: center;
+    float: right;
+}
+.import>main{
+    width: 480px;
+    margin: 0 auto;
+}
+.import>main>div>div{
+    width: 50%;
+    height: auto;
+    float: left;
+}
+h3{
+    font-size: 14px;
+    color: #666;
+    display: inline-block;
+    width: auto;
+    height: 14px;
+    margin-top: 23px;
+    font-weight: normal;
+}
+.import>main>button{
+    width: auto;
+    height: 27px;
+    border: 1px solid #f4f4f4;
+    border-radius: 4px;
+    padding: 0 18px;
+    background: #fff;
+}
+.import main input{
+    height: 27px;
+    border-radius: 4px;
+    border: 1px solid #f4f4f4;
+    outline: none;
+}
+.import>input{
+    width: 200px;
+    height: 27px;
+    border-radius: 4px;
+    background: #4381e6;
+    outline: none;
+    border: 0;
+    display: block;
+    color: #fff;
+    margin: 20px auto;
+}

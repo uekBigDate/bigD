@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/user.css">
+    <script src="js/jQuery.js"></script>
+</head>
+<body>
+<div class="bg">
+    <header>
+        <div class="logo"><img src="img/logo.png" alt=""></div>
+        <div class="title">大数据实验平台</div>
+        <div class="portrait"><img src="img/manager.jpg" alt=""></div>
+        <div class="use">管理员身份</div>
+        <i class="iconfont icon-arrow"></i>
+    </header>
+    <nav>
+        <ul class="asidenav">
+            <a href="javascript:;"><li class="selected">集群管理<div></div></li></a>
+            <a href="javascript:;"><div class="two">二级标题</div></a>
+            <a href="javascript:;"><div class="three">三级标题</div></a>
+            <a href="javascript:;"><li>学习资料</li></a>
+            <a href="javascript:;"><div class="two">二级标题</div></a>
+            <a href="javascript:;"><div class="three">三级标题</div></a>
+            <a href="javascript:;"><li>分类管理</li></a>
+            <a href="javascript:;"><div class="two">二级标题</div></a>
+            <a href="javascript:;"><div class="three">三级标题</div></a>
+            <a href="javascript:;"><li>账户管理</li></a>
+            <a href="javascript:;"><div class="two">二级标题</div></a>
+            <a href="javascript:;"><div class="three">三级标题</div></a>
+            <a href="javascript:;"><li>资源管理</li></a>
+            <a href="javascript:;"><div class="two">二级标题</div></a>
+            <a href="javascript:;"><div class="three">三级标题</div></a>
+            <a href="javascript:;"><li>购买记录</li></a>
+            <a href="javascript:;"><div class="two">二级标题</div></a>
+            <a href="javascript:;"><div class="three">三级标题</div></a>
+        </ul>
+    </nav>
+    <section>
+        <main>
+            <div class="main-title">
+                <div></div>
+                账户管理/用户列表
+            </div>
+            <div class="main-con">
+                <select>
+                    <option value="userid" selected="selected">登录名</option>
+                    <option value="name">姓名</option>
+                    <option value="num">学号</option>
+                    <option value="num">专业</option>
+                    <option value="num">院校</option>
+                    <option value="num">班级</option>
+                </select>
+                <input type="text">
+                <button class="search-btn">搜索学生</button>
+                <button class="new-btn" style="margin-left: 64px">新建学生</button>
+                <button class="import-btn">批量导入</button>
+            </div>
+        </main>
+        <main>
+            <div class="main-con" style="margin-top: 0;margin-left: 23px;justify-content: space-between">
+                <div style="display: flex;align-items: center">
+                    <div class="head-img"></div>
+                    <h1>学生用户</h1>
+                </div>
+                <div style="margin-right: 30px">
+                    <button class="f5-btn">刷新</button>
+                    <button class="del-btn">删除</button>
+                </div>
+            </div>
+            <div class="main-box">
+                <table cellspacing="1">
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>登录名</td>
+                        <td>姓名</td>
+                        <td>学号</td>
+                        <td>性别</td>
+                        <td>专业（系）</td>
+                        <td>院校</td>
+                        <td>班级</td>
+                        <td>操作</td>
+                    </tr>
+                </table>
+                <div class="nothing">没有找到匹配的记录！</div>
+            </div>
+            <div class="main-foot">
+                <button class="prev-btn">上一页</button>
+                <a href="" class="a-hot">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                ......
+                <a href="">9</a>
+                <a href="">10</a>
+                <button class="next-btn">上一页</button>
+                <button class="next-btn">尾页</button>
+            </div>
+        </main>
+    </section>
+    <footer>c 2017-2018 http://sxuek.com山西优逸客科技有限公司版权所有</footer>
+</div>
+
+<!--批量导入的弹出框-->
+<div class="import" style="display: none">
+    <div class="import-title">
+        批量导入
+        <div class="colse">X</div>
+    </div>
+    <div class="import-con">
+        <div class="icon">!</div>
+        <p>如果未下载过模板，请下载</p>
+        <button class="import-btn">下载模板</button>
+    </div>
+    <div class="import-con">
+        <div class="icon">!</div>
+        <p>如果已下载过模板，请导入</p>
+        <button class="import-btn">批量导入</button>
+    </div>
+</div>
+
+<!--新建学生的弹出框-->
+<div class="new" style="display: none">
+    <div class="import-title">
+        新建学生
+        <div class="colse">X</div>
+    </div>
+    <ul>
+        <li>
+            <span>登录名</span>
+            <input type="text">
+        </li>
+        <li>
+            <span>姓名</span>
+            <input type="text">
+        </li>
+        <li>
+            <span>学号</span>
+            <input type="text">
+        </li>
+        <li>
+            <span>性别</span>
+            <input type="text">
+        </li>
+        <li>
+            <span>专业（系）</span>
+            <input type="text">
+        </li>
+        <li>
+            <span>院校</span>
+            <input type="text">
+        </li>
+        <li>
+            <span>班级</span>
+            <input type="text">
+        </li>
+    </ul>
+    <div class="new-foot">
+        <button class="save-btn">保存</button>
+        <button class="abort-btn">取消</button>
+    </div>
+</div>
+
+
+</body>
+<script src="js/l-user.js"></script>
+<script src="js/all.js"></script>
+</html>
