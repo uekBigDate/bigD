@@ -4,12 +4,13 @@ section .maintop1{
     padding: 0;
 }
 .maintop1 .left{
-    width: 565px;
+    width: 560px;
     height: 100%;
     background: #fff;
     border-radius: 4px;
     padding: 15px;
     box-sizing: border-box;
+    margin-right: 2px;
 }
 section .maintop1 .bottom{
     width: 100%;

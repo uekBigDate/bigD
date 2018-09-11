@@ -101,7 +101,7 @@ nav{
 
 /*内容部分*/
 section{
-    width: 87%;
+    /*width: 87%;*/
     height: 710px;
     overflow-y: auto;
     overflow-x: hidden;
