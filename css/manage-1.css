@@ -104,6 +104,7 @@ section{
     float: right;
     /*background: fuchsia;*/
     overflow: hidden;
+    padding-left: 180px;
 }
 .content{
     width: 1156px;

@@ -99,9 +99,10 @@ section{
 .produce{
     width: 1168px;
     height: 100%;
-    float: right;
+    float: left;
     /*background: fuchsia;*/
     overflow: hidden;
+    padding-left: 180px;
 }
 .content{
     width: 1156px;
