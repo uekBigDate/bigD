@@ -36,14 +36,17 @@ header .title{
 header .portrait{
     width: 28px;
     height: 28px;
+    border-radius: 50%;
     position: fixed;
     top: 14px;
     right: 114px;
+    background: url("../img/manager.jpg") no-repeat center;
+    background-size: contain;
 }
-header .portrait img{
-    width: 28px;
-    height: 28px;
-}
+/*header .portrait img{*/
+    /*width: 28px;*/
+    /*height: 28px;*/
+/*}*/
 header .use{
     font-size: 14px;
     font-family: "苹方";
@@ -68,6 +71,7 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10;
 }
 nav ul{
     width: 100%;
@@ -86,27 +90,60 @@ nav ul li{
     line-height: 40px;
     cursor: pointer;
 }
+.two{
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    text-align: center;
+    color: #4c90ff;
+    border-bottom: 1px solid #F4F4F4;
+    padding-left: 30px;
+    box-sizing: border-box;
+    display: none;
+}
+.three{
+    width: 100%;
+    height: 40px;
+    font-size: 10px;
+    line-height: 40px;
+    text-align: center;
+    color: #3fd173;
+    border-bottom: 1px solid #F4F4F4;
+    padding-left: 55px;
+    box-sizing: border-box;
+    display: none;
+}
 nav ul .click{
     color: #4381e6;
     background: #ecf2fc;
     border-right: 2px solid #4381e6;
 }
 .experiment_big_box_box{
-    width: 1186px;
-    height: 1136px;
+    width: 100%;
+    /*height: auto;*/
+    height: 1176px;
     background: #f1f4f9;
     position: absolute;
-    left:180px;
-    top:58px;
-    padding:15px 15px 0;
+    left:0;
+    top:0;
+    padding:58px 0 0 180px;
     box-sizing: border-box;
 }
+.experiment_big_box{
+    width: 100%;
+    height: 100%;
+    padding:15px;
+    box-sizing: border-box;
+    /*z-index: 10;*/
+}
 .experiment_in_head{
-    width: 1156px;
+    width: 100%;
     height: 60px;
     background: #ffffff;
     border-radius: 8px;
     position: relative;
+    z-index: 5;
 
 }
 .experiment_in_head_logo{
@@ -133,6 +170,7 @@ nav ul .click{
     background: #ffffff;
     margin-top: 12px;
     border-radius: 8px;
+    z-index: 999;
 }
 .experiment_left_nav_box li{
     width: 100%;
@@ -140,9 +178,29 @@ nav ul .click{
     border-bottom: 1px solid#ececec;
     font-size: 14px;
     line-height: 39px;
-    text-align: center;
     color: #a3a3a3;
+    padding-left: 16px;
+    box-sizing: border-box;
     position: relative;
+}
+.experiment_left_nav_box li:nth-child(7) .icon-sanjiaokuai{
+    margin-right: 10px;
+}
+/*.experiment_left_nav_box li:nth-child(4){*/
+    /*padding-left: 10px;*/
+/*}*/
+.experiment_left_nav_box li:nth-child(4) .icon-sanjiaokuai{
+    margin-right: 0;
+}
+.experiment_left_nav_box li:nth-child(14) .icon-sanjiaokuai{
+    margin-right: 10px;
+}
+.experiment_left_nav_box li:nth-child(19){
+    padding-left: 10px;
+}
+.experiment_left_nav_box li:nth-child(19) .icon-sanjiaokuai{
+
+    margin-right: 4px;
 }
 .icon-sanjiaokuai{
     float: right;
@@ -158,7 +216,7 @@ nav ul .click{
     top:0;
     border-radius: 8px;
     display: none;
-    z-index: 10;
+    z-index: 999;
 }
 .experiment_left_nav_hide_in{
     width: 100%;
@@ -166,22 +224,22 @@ nav ul .click{
     font-size: 14px;
     line-height: 39px;
     text-align: center;
-    border-bottom: 1px solid#ececec;
+    border-bottom: 1px solid #ececec;
     color:#a3a3a3;
+    z-index: 999;
 }
 
 .experiment_right_words_box{
-    width: 1008px;
-    height: 998px;
-    /*background: #2196f3;*/
+    width: auto;
+    height: 1010px;
     position: absolute;
-    top: 88px;
-    left: 164px;
+    top: 150px;
+    left: 344px;
+
 }
 .experiment_right_head{
     width: 100%;
     height: 74px;
-    /*background: #ff4045;*/
     font-size: 18px;
     text-align: center;
     line-height: 74px;
@@ -190,6 +248,11 @@ nav ul .click{
 .experiment_right_in_words{
     width: 100%;
     height: auto;
+}
+.experiment_right_in_words:last-child{
+    margin-bottom: 117px;
+    padding-right: 60px;
+    box-sizing: border-box;
 }
 .experiment_right_in_words li:nth-child(1){
     width: 100%;
@@ -237,7 +300,8 @@ nav ul .click{
     color: #999b9f;
 }
 .experiment_right_in_words .long_words_box{
-    width: 906px;
+    /*width: 906px;*/
+    width: 100%;
     height: 68px;
     /*background: #83c44e;*/
     margin-bottom: 18px;
@@ -252,7 +316,7 @@ nav ul .click{
     line-height: 22px;
 }
 .experiment_right_bottom{
-    width: 1186px;
+    width: 100%;
     height: 50px;
     background: #fff;
     position: absolute;
@@ -262,4 +326,5 @@ nav ul .click{
     text-align: center;
     line-height: 50px;
     color: #b8b8b8;
+    z-index: 10;
 }

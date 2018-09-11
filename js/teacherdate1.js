@@ -1,20 +1,43 @@
 let lis=document.querySelectorAll("nav ul li");
+let two=document.querySelectorAll(".asidenav .two");
+let three=document.querySelectorAll(".asidenav .three");
+console.log(two,three);
+let time=0;
 lis.forEach(function (v,i) {
     v.onclick=function () {
         lis.forEach(function (ele) {
             ele.className="";
         });
         lis[i].className="click";
+        time++;
+        if (time%2!=0) {
+            two[i].style.display="block";
+        }else if (time%2==0) {
+            two[i].style.background="#fff"
+            two[i].style.display="none";
+            three[i].style.display="none";
+            two[i].style.color="#333";
+        }
     }
 });
+let num=0;
+for (let i=0;i<two.length;i++) {
+    two[i].onclick=function () {
+        num++;
+        two[i].style.background="#ECF2FC";
+        two[i].style.color="#4381E6";
+        if (num%2!=0) {
+            three[i].style.display="block";
+        }else if (num%2==0) {
+            three[i].style.display="none";
+        }
+    }
+}
 let lies=document.querySelectorAll(".experiment_left_nav_box li");
 let hide=document.querySelectorAll(".experiment_left_nav_hide");
 let icon=document.querySelectorAll(".icon-sanjiaokuai");
 let hide_in=document.querySelectorAll(".experiment_left_nav_hide_in");
-console.log(hide_in);
-console.log(icon);
-console.log(hide);
-console.log(lies);
+
 lies.forEach(function (element,index) {
     lies[index].onmouseenter=function () {
         console.log("1");
