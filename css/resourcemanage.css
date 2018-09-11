@@ -4,7 +4,7 @@ section .maintop1{
     padding: 0;
 }
 .maintop1 .left{
-    width: 570px;
+    width: 565px;
     height: 100%;
     background: #fff;
     border-radius: 4px;
@@ -28,4 +28,12 @@ section .maintop1 .bottom .tands{
 section .maintop1 .bottom .tands img{
     width: 78px;
     height: 38px;
+}
+#sec{
+    max-height: 650px;
+    overflow-y: auto;
+    padding-bottom: 100px;
+}
+#mainmid1{
+    height:auto ;
 }
