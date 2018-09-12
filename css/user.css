@@ -475,8 +475,8 @@ footer{
     overflow: hidden;
 }
 .selected>div{
-    height: 20px;
-    width: 20px;
+    height: 0;
+    width: 0;
     border-radius: 50%;
     background: rgba(0,0,0,.1);
     position: absolute;
@@ -485,5 +485,5 @@ footer{
     left: 0;
     right: 0;
     margin: auto;
-    display: none;
+
  }

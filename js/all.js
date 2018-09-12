@@ -43,16 +43,16 @@ window.onload=function () {
     }
 
     // //水波动效
-    // $(".asidenav a li").click(function () {
-    //     let index=$(".asidenav a li").index();
-    //     $(".asidenav li div").eq(index).css("display","block").finish().animate({
-    //         width:`300px`,
-    //         height:`300px`
-    //     },20,function () {
-    //         $(".asidenav li div").eq(index).css({display:"none",width: `20px`,height: `20px`
-    //         })
-    //     })
-    //
-    // });
+    $(".asidenav a li").click(function () {
+
+        $(".asidenav li div").css("display","block").finish().animate({
+            width:`300px`,
+            height:`300px`
+        },100,function () {
+            $(".asidenav li div").css({display:"none",width: `0`,height: `0`
+            })
+        })
+
+    });
 
 };
