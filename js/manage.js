@@ -13,8 +13,8 @@ window.onload=function () {
                 classOne[j].style.color="#333";
             }
             classOne[i].style.color="#4381E6";
-            classOne[i].style.background="#ECF2FC";
-            classOne[i].style.borderRight="2px solid #4381E6";
+            // classOne[i].style.background="#ECF2FC";
+            // classOne[i].style.borderRight="2px solid #4381E6";
             time++;
             if (time%2!=0) {
                 two[i].style.display="block";
@@ -24,9 +24,7 @@ window.onload=function () {
                 three[i].style.display="none";
                 two[i].style.color="#333";
             }
-
         }
-
     }
     let num=0;
     for (let i=0;i<two.length;i++) {

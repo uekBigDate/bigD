@@ -89,11 +89,10 @@ section{
     line-height: 39px;
     text-decoration: none;
     position: relative;
+    overflow: hidden;
 }
 .class-one:hover{
     color: #4381e6;
-    /*background: #ecf2fc;*/
-    /*border-right: 2px solid #4381e6;*/
 }
 .produce{
     width: 100%;
@@ -180,7 +179,7 @@ input{
     background-image: -webkit-linear-gradient(left,#6787ff,#31c1fb);
     overflow: hidden;
     margin-bottom: 11px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 .type:nth-child(3){
     margin-right:0;
@@ -361,4 +360,15 @@ footer{
     padding-left: 55px;
     box-sizing: border-box;
     display: none;
+}
+.r{
+    width: 0;
+    height:0;
+    background: rgba(236,242,252,0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
 }
