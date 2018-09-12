@@ -8,12 +8,10 @@ window.onload=function () {
     for (let i = 0; i < classOne.length; i++) {
         classOne[i].onclick = function () {
             for (let j = 0; j < classOne.length; j++) {
-                // navlis[j] .classList.remove("selected");
                 classOne[j].style.background="#fff";
                 classOne[j].style.borderRight="none";
                 classOne[j].style.color="#333";
             }
-            // navlis[i].classList.add("selected");
             classOne[i].style.color="#4381E6";
             classOne[i].style.background="#ECF2FC";
             classOne[i].style.borderRight="2px solid #4381E6";
