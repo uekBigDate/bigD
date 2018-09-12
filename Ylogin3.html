@@ -9,10 +9,10 @@
     <title>Uek大数据实验平台</title>
 </head>
 <body>
-    <div class="bigbg">
-        <div class="square1"><img src="img/square1.png" height="626" width="700"/></div>
-        <div class="square2"><img src="img/square2.png" height="722" width="417"/></div>
-        <div class="bg"></div>
+<div class="bigbg">
+    <div class="square1"><img src="img/square1.png"></div>
+    <div class="square2"><img src="img/square2.png"></div>
+    <div class="bg">
         <div class="bigdt"></div>
         <div class="login">
             <div class="logo"></div>
@@ -40,17 +40,27 @@
                 <div class="fifthR">A B C D</div>
             </div>
             <a href="" class="btn1">注册</a>
-            <h4 class="lost">返回登录</h4>
+            <a href="" class="lost">返回登录</a>
         </div>
     </div>
-    <div class="mask">
-        <div class="maskalert">
-            <a href="Ylogin4.html">×</a>
-            <div class="maskword">
-                <div class="maskword1"></div>
-                <div class="maskword2">您复制的密码已发送到您的邮箱</div>
-            </div>
+</div>
+<div class="zhezhao">
+    <div class="smallzz">
+        <span>×</span>
+        <div class="maskword">
+            <div class="maskword1"></div>
+            <div class="maskword2">您复制的密码已发送到您的邮箱</div>
         </div>
     </div>
+</div>
 </body>
+<script>
+    let span = document.querySelector("span");
+    let zhezhao = document.querySelector(".zhezhao");
+    let smallzz = document.querySelector(".smallzz");
+    let mask = document.querySelector(".maskword");
+    span.onclick=function () {
+        open("index.html")
+    }
+</script>
 </html>

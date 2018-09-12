@@ -3,41 +3,73 @@
     padding: 0;
     list-style: none;
 }
-.bigbg{
-    width: 1366px;
-    height: 630px;
+body html{
     background: #0a296a;
-    position: relative;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.bigbg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #0a296a;
+}
+.square1{
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.square1 img{
+    height: 100%;
+    width: 100%;
 }
 .square2{
-    float: right;
-    margin-top: -768px;
+    width: 20%;
+    height: 64%;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.square2 img{
+    width: 100%;
+    height: 100%;
+
 }
 .bg{
     width: 760px;
     height: 480px;
     background: white;
-    position: absolute;
-    top: 82px;
-    left: 303px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
     border-radius: 5px;
 }
 .bigdt{
     width: 400px;
     height: 510px;
     background: url("../img/welcome.png") no-repeat center;
-    background-size: 400px 510px;
+    background-size: 400px 520px;
     position: absolute;
-    top: 70px;
-    left: 290px;
+    top: -13px;
+    left: -15px;
 }
 .login{
     width: 360px;
     height: 480px;
     /*background: cyan;*/
     position: absolute;
-    top: 82px;
-    left: 700px;
+    top: 0;
+    right: 0;
 }
 .logo{
     width: 84px;
@@ -45,6 +77,24 @@
     background: url("../img/ueklogo.png") no-repeat center;
     background-size: 84px 84px;
     margin: 30px auto;
+    animation: scale 4s linear infinite;
+}
+@keyframes scale {
+    0%{
+        transform: scale(1,1);
+    }
+    25%{
+        transform: scale(1.1,1.1);
+    }
+    50%{
+        transform: scale(1.2,1.2);
+    }
+    75%{
+        transform: scale(1.1,1.1);
+    }
+    100%{
+        transform: scale(1,1);
+    }
 }
 .uesr{
     width: 270px;
@@ -105,6 +155,9 @@
     float: left;
 }
 .btn1{
+    /*display: block;*/
+    outline: none;
+    /*text-decoration: none;*/
     width: 260px;
     height: 32px;
     background: -webkit-linear-gradient(left,#4282e6,#30c1fa);
@@ -114,6 +167,7 @@
     font-size: 14px;
     text-align: center;
     line-height: 32px;
+    cursor: pointer;
 }
 .btn2{
     display: block;
@@ -129,9 +183,12 @@
     text-align: center;
     line-height: 32px;
 }
-.login h4{
-    margin-left: 146px;
-    margin-top: 110px;
+.login .wangji{
+    display: block;
+    text-decoration: none;
+    margin-top: 100px;
+    margin-left: 140px;
+    /*margin: 100px auto;*/
     color: #7ba7ed;
     font-size: 14px;
     font-weight: normal;
@@ -152,19 +209,19 @@
      box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.1);
      display: none;
  }
-/*.mimaalert{*/
-    /*width: 150px;*/
-    /*height: 30px;*/
-    /*background: white;*/
-    /*position: absolute;*/
-    /*top: 238px;*/
-    /*left: 160px;*/
-    /*border-radius: 50px;*/
-    /*font-size: 12px;*/
-    /*color: #f18888;*/
-    /*!*color: red;*!*/
-    /*text-align: center;*/
-    /*line-height: 30px;*/
-    /*box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.1);*/
-    /*display: none;*/
-/*}*/
+.mimaalert{
+    width: 150px;
+    height: 30px;
+    background: white;
+    position: absolute;
+    top: 238px;
+    left: 160px;
+    border-radius: 50px;
+    font-size: 12px;
+    color: #f18888;
+    /*color: red;*/
+    text-align: center;
+    line-height: 30px;
+    box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.1);
+    display: none;
+}
