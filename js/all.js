@@ -43,13 +43,14 @@ window.onload=function () {
     }
 
     // //水波动效
-    $(".asidenav a li").click(function () {
-
-        $(".asidenav li div").css("display","block").finish().animate({
+    $(".asidenav a").click(function () {
+        let index=$(this).index();
+        console.log(index);
+        $(".asidenav a main").eq(index).css("display","block").finish().animate({
             width:`300px`,
             height:`300px`
-        },100,function () {
-            $(".asidenav li div").css({display:"none",width: `0`,height: `0`
+        },200,function () {
+            $(".asidenav a main").eq(index).css({display:"none",width: `0`,height: `0`
             })
         })
 
