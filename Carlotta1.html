@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_829250_nlqsa16kan.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/Carlotta.css">
+    <script src="js/jQuery.js"></script>
+    <script src="js/Carlotta.js"></script>
+</head>
+<body>
+<header>
+    <div class="pull-left">
+        <img src="img/logo.png" alt="" class="logo pull-left">
+        <div class="system-name pull-left">大数据实验平台</div>
+    </div>
+    <div class="pull-right managelogo">
+        <!--<img src="" alt="" class="pull-left">-->
+        <div class="pull-left"></div>
+        <div class="manager pull-left">管理员身份</div>
+        <i class="iconfont icon-icon-arrDown-fill pull-left"></i>
+    </div>
+</header>
+<nav>
+    <ul class="asidenav">
+        <li class="selected"><a href="javascript:;">集群管理</a></li>
+        <li><a href="javascript:;">学习资料</a></li>
+        <li><a href="javascript:;">分类管理</a></li>
+        <li><a href="javascript:;">账户管理</a></li>
+        <li><a href="javascript:;">资源管理</a></li>
+        <li><a href="javascript:;">购买记录</a></li>
+    </ul>
+</nav>
+<section>
+    <div class="top">分类管理
+        <div class="shuxian"></div>
+    </div>
+    <div class="center">
+        <span>名称</span>
+        <input type="text">
+        <button class="btn1">搜索</button>
+        <button class="btn2">添加</button>
+    </div>
+    <table>
+        <tr class="tr1">
+            <td>名称</td>
+            <td>介绍</td>
+            <td>类型</td>
+            <td>链接</td>
+            <td>操作</td>
+        </tr>
+        <tr>
+            <td class="xiugai">实验一  基本操作实验</td>
+            <td class="xiugai">熟悉大数据实验一体机并了解如何搭建集群</td>
+            <td class="xiugai">实验手册</td>
+            <td ><button class="btn3">下载</button></td>
+            <td><button class="btn4">删除</button><button class="btn5">修改</button></td>
+        </tr>
+        <tr>
+            <td class="xiugai">实验一  基本操作实验</td>
+            <td class="xiugai">熟悉大数据实验一体机并了解如何搭建集群</td>
+            <td class="xiugai">教材配套PPT</td>
+            <td><button class="btn3">下载</button></td>
+            <td><button class="btn4">删除</button><button class="btn5">修改</button></td>
+        </tr>
+        <tr>
+            <td class="xiugai">实验一  基本操作实验</td>
+            <td class="xiugai">熟悉大数据实验一体机并了解如何搭建集群</td>
+            <td class="xiugai">教材配套PPT</td>
+            <td><button class="btn3">下载</button></td>
+            <td><button class="btn4">删除</button><button class="btn5">修改</button></td>
+        </tr>
+    </table>
+    <div class="yeshu">
+        <div class="shang">上一页</div>
+        <div class="ye hot">1</div>
+        <div class="ye">2</div>
+        <div class="ye">3</div>
+        <div class="teshu">...</div>
+        <div class="ye">9</div>
+        <div class="ye">10</div>
+        <div class="xia">下一页</div>
+        <div class="wei">尾页</div>
+    </div>
+</section>
+<footer>
+    c 2017-2018 http://sxuek.com山西优逸客科技有限公司版权所有
+</footer>
+</body>
+<script>
+    let a=$(".ye")
+    a.click(function () {
+        a.removeClass("hot").eq($(this).index()-1).addClass("hot");
+
+    })
+
+</script>
+</html>
