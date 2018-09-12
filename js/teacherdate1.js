@@ -33,6 +33,18 @@ for (let i=0;i<two.length;i++) {
         }
     }
 }
+$(".asidenav a").click(function () {
+    let index=$(this).index();
+    console.log(index);
+    $(".asidenav a main").eq(index).css("display","block").finish().animate({
+        width:`300px`,
+        height:`300px`
+    },200,function () {
+        $(".asidenav a main").eq(index).css({display:"none",width: `0`,height: `0`
+        })
+    })
+
+});
 let lies=document.querySelectorAll(".experiment_left_nav_box li");
 let hide=document.querySelectorAll(".experiment_left_nav_hide");
 let icon=document.querySelectorAll(".icon-sanjiaokuai");

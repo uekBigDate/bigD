@@ -63,6 +63,7 @@ header .use{
     top: 22px;
     right: 12px;
 }
+
 nav{
     width: 180px;
     height: 100%;
@@ -89,6 +90,21 @@ nav ul li{
     text-align: center;
     line-height: 40px;
     cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+.asidenav li main{
+    height: 0;
+    width: 0;
+    border-radius: 50%;
+    background: rgba(100,100,100,.1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
 }
 .two{
     width: 100%;
