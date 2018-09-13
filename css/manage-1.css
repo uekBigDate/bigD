@@ -100,6 +100,7 @@ section{
     overflow: hidden;
     padding-left: 195px;
     box-sizing: border-box;
+    padding-right: 15px;
 }
 .content{
     width: 100%;
@@ -244,16 +245,15 @@ section{
     height: 437px;
     margin-top: 11px;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
+    align-content: space-between;
     flex-wrap: wrap;
 }
 .node1{
-    width: 378px;
+    width: 372px;
     height: 213px;
     background: #fff;
-    border-radius: 5px;
-    margin-bottom: 11px;
-    margin-right: 10px;
+    border-radius: 4px;
 }
 .node1:nth-child(3){
     margin-right: 0;
