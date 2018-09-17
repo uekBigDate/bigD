@@ -8,7 +8,7 @@ a{
 }
 body,html{
     width: 100%;
-    height: auto;
+    height: 100%;
     position: relative;
 }
 header{
@@ -141,16 +141,16 @@ nav ul li{
 
 section{
     width: 100%;
-    min-height: 768px;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     background: #f1f4f9;
-    padding: 73px 0 0 195px;
+    padding: 73px 15px 0 195px;
     box-sizing: border-box;
 }
 section main{
-    width: 100%;
+    width: auto;
     height: auto;
     background: #fff;
     margin-bottom: 11px;
@@ -336,6 +336,7 @@ footer{
     font-size: 12px;
     line-height: 50px;
     text-align: center;
+    z-index: 999;
 }
 /*批量导入的弹出框*/
 .import{

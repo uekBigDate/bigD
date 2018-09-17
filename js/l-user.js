@@ -52,9 +52,6 @@ $(function () {
     });
 
 
-    $(".next-btn").click(function () {
-        $(".import").css("display","block")
-    });
 
 
 });
