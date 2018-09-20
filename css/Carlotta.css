@@ -1,25 +1,30 @@
 @import "base.css";
 section{
-    width: 1156px;
-    height: 458px;
-    background: #ffffff;
-    margin-top: 73px;
-    margin-left: 195px;
-    overflow:hidden ;
-    position: relative;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f1f4f9;
+    padding: 73px 15px 0 195px;
+    box-sizing: border-box;
+}
+section main{
+    width: auto;
+    height: auto;
+    background: #fff;
+    margin-bottom: 11px;
+    padding: 23px 30px;
+    box-sizing: border-box;
 }
 .top{
     width: 100%;
     height: 14px;
-    /*background: aqua;*/
-    padding-left:40px;
-    box-sizing: border-box;
     font-size: 14px;
     line-height: 14px;
     color: #666666;
     position: relative;
     margin-top: 22px;
-    /*padding-top: 22px;*/
 }
 .shuxian{
     width: 2px;
@@ -32,8 +37,6 @@ section{
 .center{
     width: 100%;
     height: 29px;
-    padding-left: 59px;
-    /*background: green;*/
     margin-top: 21px;
     position: relative;
 }
@@ -62,69 +65,27 @@ section{
     background: #4381e6;
 }
 .btn2{
-    position: absolute;
     background: #25cb77;
-    /*margin-left: 15px;*/
-    top: 0;
-    right: 88px;
+    float: right;
 }
 table{
-    width: 1098px;
-        /*height: 246px;*/
+    width: 100%;
     background: #f4f4f4;
-    margin-left: 30px;
     border: 1px solid #f4f4f4;
     box-sizing: border-box;
     margin-top: 21px;
 }
-table tr{
-    width: 100%;
-    height: 54px;
-}
-.tr1{
-    width: 100%;
-    height: 54px;
-    background: #ffffff;
-}
-.tr1 td{
+td{
+    height: 55px;
+    background: #fff;
+    line-height: 55px;
     text-align: center;
-    line-height: 54px;
-    font-size: 14px;
-    color: #999999;
 }
-.tr1 td:first-child{
-    width: 226px;
-    height: 54px;
-}
-.tr1 td:nth-child(2){
-    width: 333px;
-    height: 54px;
-}
-.tr1 td:nth-child(3){
-    width: 170px;
-    height: 54px;
-}
-.tr1 td:nth-child(4){
-    width: 143px;
-    height: 54px;
-}
-tr td{
-    text-align: center;
-    color: #999999;
-    font-size: 14px;
-    background: #ffffff;
-    position: relative;
-}
+
 .btn3{
     width: 82px;
     height: 29px;
     background: #25cb77;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
     color: #ffffff;
     font-size: 12px;
     border: none;
@@ -135,27 +96,21 @@ tr td{
     width: 82px;
     height: 29px;
     background: #f9f9f9;
-    left: 20px;
-    top: 19px;
-    position: absolute;
     border: none;
 }
 .btn5{
     width: 82px;
     height: 29px;
     background: #4381e6;
-    position: absolute;
-    right: 20px;
-    top: 19px;
+    margin-left: 15px;
+    color: #fff;
     border: none;
 }
 .yeshu{
     width: 521px;
     height: 29px;
     background:#ffffff;
-    position: absolute;
-    bottom: 37px;
-    left: 304px;
+   margin: 40px auto 0;
     display: flex;
     justify-content: space-between;
 }
@@ -210,6 +165,77 @@ tr td{
     background: #4381e6;
     color: #ffffff;
 }
+
+
+a{
+    text-decoration: none;
+}
+
+/*头部*/
+body,html{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+header{
+    width: 100%;
+    height: 58px;
+    background: #4381e6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+header .logo{
+    width: 35px;
+    height: 36px;
+    position: fixed;
+    top: 16px;
+    left: 42px;
+}
+header .logo img{
+    width: 35px;
+    height: 36px;
+}
+header .title{
+    font-size: 18px;
+    font-family: FZZYJW;
+    color: #fff;
+    position: fixed;
+    top: 17px;
+    left: 88px;
+    font-weight: bold;
+}
+header .portrait{
+    width: 28px;
+    height: 28px;
+    position: fixed;
+    top: 14px;
+    right: 114px;
+}
+header .portrait img{
+    width: 28px;
+    height: 28px;
+}
+header .use{
+    font-size: 14px;
+    font-family: "苹方";
+    font-weight: bold;
+    color: rgba(255,255,255,0.5);
+    position: fixed;
+    top: 18px;
+    right: 36px;
+}
+.icon-arrow{
+    color: rgba(255,255,255,0.5);
+    font-size: 10px;
+    position: fixed;
+    top: 22px;
+    right: 12px;
+}
+
+
+
 nav{
     width: 180px;
     height: 100%;
@@ -275,4 +301,202 @@ nav ul li{
     padding-left: 55px;
     box-sizing: border-box;
     display: none;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    color: #666;
+    font-size: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+/*批量导入的弹出框*/
+.import,.cailiao-add{
+    width: 393px;
+    height: 430px;
+    background: #fff;
+    border-radius: 4px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: 0 0 2000px 2000px rgba(0,0,0,0.8);
+    z-index: 999;
+    overflow: hidden;
+}
+.import-title{
+    width: 100%;
+    height: 39px;
+    background: #fff;
+    border-bottom: 1px solid #f4f4f4;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 34px;
+    padding: 4px 8px 0 19px;
+    box-sizing: border-box;
+    margin-bottom: 9px;
+}
+.colse{
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+    color: #bdc0c5;
+    line-height: 30px;
+    text-align: center;
+    float: right;
+}
+.import-con1{
+    width: 100%;
+    height: 29px;
+    padding: 0 36px;
+    box-sizing: border-box;
+    margin-top: 11px;
+}
+h6{
+    display: inline-block;
+    width: 57px;
+    height: 29px;
+    font-size: 14px;
+    color: #999;
+    line-height: 29px;
+    margin-right: 10px;
+    font-weight: normal;
+}
+input{
+    width: 248px;
+    height: 29px;
+    border-radius: 4px;
+    border: 1px solid #f4f4f4;
+    box-sizing: border-box;
+    text-indent: 1em;
+    line-height: 29px;
+}
+.uptata-btn{
+    width: 82px;
+    height: 29px;
+    border-radius: 4px;
+    background: #4381e6;
+    margin-left: 72px;
+    color: #fff;
+    border: 0;
+    outline: none;
+    line-height: 29px;
+    display: inline-block;
+}
+.import-con2{
+    height: 62px;
+}
+textarea{
+    width: 248px;
+    height: 62px;
+    resize: none;
+    outline: none;
+    border:  1px solid #f4f4f4;
+}
+select{
+    width: 248px;
+    height: 29px;
+    border-radius: 4px;
+    border: 1px solid #f4f4f4;
+    box-sizing: border-box;
+    text-indent: 1em;
+    color: #d6d6d6;
+}
+.xiugai-btn{
+    width: 320px;
+    height: 29px;
+    border-radius: 4px;
+    margin-top: 27px;
+    outline: none;
+    border: 0;
+}
+
+/*分类添加的弹出框*/
+.bg2{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    position: relative;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.class-add{
+    width: 393px;
+    height: 310px;
+    border-radius: 4px;
+    z-index: 999;
+    overflow: hidden;
+}
+main{
+    width: 100%;
+    background: #fff;
+    padding-bottom: 27px;
+}
+.add-con{
+    padding: 0 36px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 29px;
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.add-con select{
+    width: 248px;
+    height: 29px;
+    border-radius: 4px;
+    border:  1px solid #f4f4f4;
+    box-sizing: border-box;
+    text-indent: 1em;
+    line-height: 29px;
+}
+.add-btn{
+    width: 320px;
+    height: 29px;
+    border-radius: 4px;
+    margin: 27px auto 0;
+    outline: none;
+    border: 0;
+    display: block;
+}
+
+
+.duigou{
+    width: 49px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 13px;
+    font-size: 14px;
+    color: #999;
+    line-height: 15px;
+}
+.duigou:hover{
+    cursor: pointer;
+}
+.duigou-son{
+    width: 15px;
+    height: 15px;
+    border-radius: 4px;
+    display: inline-block;
+    border: 1px solid #f4f4f4;
+    margin-right: 4px;
+    line-height: 15px;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.add-hot{
+    background: #4381e6;
+    border: 0;
 }

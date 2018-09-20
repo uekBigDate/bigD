@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+header{
+    width: 100%;
+    height: 58px;
+    background: #4381e6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+header .logo{
+    width: 35px;
+    height: 36px;
+    position: fixed;
+    top: 16px;
+    left: 42px;
+}
+header .logo img{
+    width: 35px;
+    height: 36px;
+}
+header .title{
+    font-size: 18px;
+    font-family: FZZYJW;
+    color: #fff;
+    position: fixed;
+    top: 17px;
+    left: 88px;
+    font-weight: bold;
+}
+header .portrait{
+    width: 28px;
+    height: 28px;
+    position: fixed;
+    top: 14px;
+    right: 114px;
+}
+header .portrait img{
+    width: 28px;
+    height: 28px;
+}
+header .use{
+    font-size: 14px;
+    font-family: "苹方";
+    font-weight: bold;
+    color: rgba(255,255,255,0.5);
+    position: fixed;
+    top: 18px;
+    right: 36px;
+}
+.icon-arrow{
+    color: rgba(255,255,255,0.5);
+    font-size: 10px;
+    position: fixed;
+    top: 22px;
+    right: 12px;
+}
+
+nav{
+    width: 180px;
+    height: 100%;
+    background: #ffffff;
+    box-shadow: 4px 0 15px rgba(218,218,218,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+nav ul{
+    width: 100%;
+    margin-top: 58px;
+}
+nav ul li{
+    width: 100%;
+    height: 41px;
+    border-bottom: 1px solid #f4f4f4;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: "苹方";
+    font-weight: bold;
+    color: rgba(0,0,0,0.6);
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+.asidenav li main{
+    height: 0;
+    width: 0;
+    border-radius: 50%;
+    background: rgba(100,100,100,.1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+.two{
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    text-align: center;
+    color: #4c90ff;
+    border-bottom: 1px solid #F4F4F4;
+    padding-left: 30px;
+    box-sizing: border-box;
+    display: none;
+}
+.three{
+    width: 100%;
+    height: 40px;
+    font-size: 10px;
+    line-height: 40px;
+    text-align: center;
+    color: #3fd173;
+    border-bottom: 1px solid #F4F4F4;
+    padding-left: 55px;
+    box-sizing: border-box;
+    display: none;
+}
+section{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f1f4f9;
+    padding: 73px 15px 0 195px;
+    box-sizing: border-box;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    color: #666;
+    font-size: 12px;
+    line-height: 50px;
+    text-align: center;
+    z-index: 999;
+}
+h3{
+    font-size: 14px;
+    font-family: "苹方";
+    font-weight: bold;
+    color: rgba(0,0,0,0.6);
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+}
+.section-head{
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    border-radius: 4px;
+    line-height: 60px;
+    padding: 0 32px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+}
+.section-head>div{
+    width: 2px;
+    height: 11px;
+    background-image: -webkit-linear-gradient(top,#6787ff,#33bffb);
+    display: inline-block;
+    margin-right: 4px;
+}
+.section-aside{
+    width: 165px;
+    background: #fff;
+    border-radius: 4px;
+    padding: 5px 0 15px;
+    float: left;
+}
+.section-aside>li{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+.section-aside>li>a{
+    font-size: 14px;
+    font-family: "苹方";
+    font-weight: bold;
+    color: #7f7f7f;
+    line-height: 40px;
+}
+.section-main{
+    margin-left: 172px;
+}
+.section-main>li{
+    display: inline-block;
+    margin: 0 5px 11px;
+}
+.section-main>li>a{
+    display: inline-block;
+    width: 319px;
+    height: 232px;
+    background: black;
+    border-radius: 4px;
+}

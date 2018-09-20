@@ -1,4 +1,3 @@
-
 window.onload=function(){
 
 
@@ -7,8 +6,6 @@ window.onload=function(){
     let btn2=document.querySelector(".btn2");
     let btn5=document.querySelectorAll(".btn5");
     let xiugai=document.querySelectorAll(".xiugai");
-    // console.log(xiugai);
-    // console.log(btn4);
 
 
     btn2.onclick=function () {
@@ -38,4 +35,23 @@ window.onload=function(){
             input.focus();
         }
     }
-}
+
+    // let clickNum=0;
+    // $("td input").first().click(function () {
+    //     clickNum++;
+    //     if (clickNum%2==1){
+    //         $("td input").attr("checked","true")
+    //     } else if (clickNum%2==0) {
+    //         $("td input").removeAttr("checked","flase")
+    //     }
+    // });
+    //
+    //
+    // $(".next-btn").click(function () {
+    //     $(".import").css("display","block")
+    // });
+
+
+
+
+};

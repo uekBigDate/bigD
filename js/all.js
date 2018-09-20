@@ -45,7 +45,6 @@ window.onload=function () {
     // //水波动效
     $(".asidenav a").click(function () {
         let index=$(this).index();
-        console.log(index);
         $(".asidenav a main").eq(index).css("display","block").finish().animate({
             width:`300px`,
             height:`300px`
