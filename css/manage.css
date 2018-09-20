@@ -4,58 +4,138 @@
     list-style: none;
     text-decoration: none;
 }
+a{
+    text-decoration: none;
+}
 /*头部开始*/
+body,html{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
 header{
     width: 100%;
     height: 58px;
     background: #4381e6;
     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
 }
-.header-left{
-    width: 176px;
-    height: 36px;
-    margin-left: 42px;
-    margin-top: 16px;
-    float: left;
-    display: flex;
-    justify-content: space-between;
-}
-.dolphin{
+header .logo{
     width: 35px;
     height: 36px;
-    background: url("../img/1@3x.png") no-repeat center;
-    background-size: contain;
+    position: fixed;
+    top: 16px;
+    left: 42px;
 }
-.name{
-    font-size: 16px;
+header .logo img{
+    width: 35px;
+    height: 36px;
+}
+header .title{
+    font-size: 18px;
+    font-family: FZZYJW;
     color: #fff;
-   margin-top: 7px;
+    position: fixed;
+    top: 17px;
+    left: 88px;
+    font-weight: bold;
 }
-.header-right{
-    width: 127px;
+header .portrait{
+    width: 28px;
     height: 28px;
-    float: right;
-    margin-right: 15px;
-    margin-top: 14px;
-    display: flex;
-    justify-content: space-between;
+    position: fixed;
+    top: 14px;
+    right: 114px;
 }
-.head{
+header .portrait img{
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    background: url("../img/13@3x.png") no-repeat center;
-    background-size: contain;
 }
-.manager{
-    font-size: 13px;
-    color: #b2c7f3;
-    line-height: 28px;
+header .use{
+    font-size: 14px;
+    font-family: "苹方";
+    font-weight: bold;
+    color: rgba(255,255,255,0.5);
+    position: fixed;
+    top: 18px;
+    right: 36px;
 }
-.arrow{
-    font-size: 5px;
-    color:#b2c7f3;
-    line-height: 28px;
+.icon-icon-arrDown-fill{
+    color: rgba(255,255,255,0.5);
+    font-size: 10px;
+    position: fixed;
+    top: 22px;
+    right: 12px;
+}
+
+nav{
+    width: 180px;
+    height: 100%;
+    background: #ffffff;
+    box-shadow: 4px 0 15px rgba(218,218,218,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+nav ul{
+    width: 100%;
+    margin-top: 58px;
+}
+nav ul li{
+    width: 100%;
+    height: 41px;
+    border-bottom: 1px solid #f4f4f4;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: "苹方";
+    font-weight: bold;
+    color: rgba(0,0,0,0.6);
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+.asidenav li main{
+    height: 0;
+    width: 0;
+    border-radius: 50%;
+    background: rgba(100,100,100,.1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+.two{
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    text-align: center;
+    color: #4c90ff;
+    border-bottom: 1px solid #F4F4F4;
+    padding-left: 30px;
+    box-sizing: border-box;
+    display: none;
+}
+.three{
+    width: 100%;
+    height: 40px;
+    font-size: 10px;
+    line-height: 40px;
+    text-align: center;
+    color: #3fd173;
+    border-bottom: 1px solid #F4F4F4;
+    padding-left: 55px;
+    box-sizing: border-box;
+    display: none;
 }
 /*头部结束*/
 section{
@@ -63,37 +143,6 @@ section{
     height: 660px;
     background: #f1f4f9;
     padding-top: 58px;
-}
-.aside{
-    width: 180px;
-    height: 100%;
-    background: #fff;
-    position: fixed;
-    top:58px;
-    left:0;
-}
-.class{
-    width: 100%;
-    height: 240px;
-    /*background: lightskyblue;*/
-}
-.class-one{
-    display: block;
-    width: 178px;
-    height: 39px;
-    border-bottom: 1px solid #f4f4f4;
-    background:#fff;
-    font-size: 14px;
-    font-weight: bold;
-    color: #8d8d8d;
-    text-align: center;
-    line-height: 39px;
-    text-decoration: none;
-    position: relative;
-    overflow: hidden;
-}
-.class-one:hover{
-    color: #4381e6;
 }
 .produce{
     width: 100%;
@@ -109,7 +158,6 @@ section{
     height: 512px;
     /*background: gold;*/
     margin: 15px auto;
-    padding-right: 15px;
 }
 .message{
     width: 100%;
@@ -144,14 +192,17 @@ section{
     margin-top: 16px;
     margin-left: 114px;
 }
-input{
+.password{
     width: 150px;
     height: 28px;
-    outline: none;
-    border: none;
     float: right;
-    text-indent: 10px;
     background: #f9f9f9;
+    font-size: 12px;
+    color:#b8b8b8;
+    line-height: 28px;
+    padding-left: 13px;
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 .tijiao{
     width: 82px;
@@ -224,23 +275,13 @@ input{
     background-image: -webkit-linear-gradient(left,#847dfd,#ec81ea);
 }
 .test{
-    width: 767px;
+    width: 750px;
     height: 239px;
     border-radius: 5px;
     background: url("../img/hadoop@3x.png") no-repeat center;
     background-size: contain;
 }
-footer{
-    width:100%;
-    height: 50px;
-    background:#fff;
-    font-size: 12px;
-    color: #b8b8b8;
-    text-align: center;
-    line-height: 50px;
-    position: absolute;
-    z-index: 5;
-}
+
 .zhezhao{
     width: 100%;
     height: 768px;
@@ -334,38 +375,32 @@ footer{
     text-align: center;
     line-height: 27px;
 }
-.two{
+footer{
     width: 100%;
-    height: 40px;
+    height: 50px;
+    background: #fff;
+    position: relative;
+    color: #666;
     font-size: 12px;
-    line-height: 40px;
+    line-height: 50px;
     text-align: center;
-    color: #333;
-    border-bottom: 1px solid #F4F4F4;
-    padding-left: 30px;
-    box-sizing: border-box;
+    z-index: 999;
+}
+.drop-down{
+    width: 127px;
+    height: 64px;
+    border-radius: 5px;
+    background: #fff;
+    position: fixed;
+    top: 54px;
+    right: 15px;
+    z-index: 999;
     display: none;
 }
-.three{
-    width: 100%;
-    height: 40px;
-    font-size: 10px;
-    line-height: 40px;
+.drop-down>a>span{
+    display: block;
+    font-size: 13px;
     text-align: center;
-    color: #3fd173;
-    border-bottom: 1px solid #F4F4F4;
-    padding-left: 55px;
-    box-sizing: border-box;
-    display: none;
-}
-.r{
-    width: 0;
-    height:0;
-    background: rgba(236,242,252,0.5);
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
+    color: #b8b8b8;
+    margin-top: 11px;
 }

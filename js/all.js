@@ -56,4 +56,19 @@ window.onload=function () {
 
     });
 
+
+
+    //下拉框
+    let drop=$(".drop-down");
+    let btn=$(".icon-icon-arrDown-fill");
+    btn.click(function () {
+        btn.css("transform","rotate(180deg)");
+        drop.slideDown();
+
+    });
+    $(".off").click(function () {
+        btn.css("transform","rotate(0)");
+        drop.slideUp();
+    })
+
 };
