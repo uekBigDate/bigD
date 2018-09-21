@@ -55,8 +55,6 @@ window.onload=function () {
 
     });
 
-
-
     //下拉框
     let drop=$(".drop-down");
     let btn=$(".icon-icon-arrDown-fill");
